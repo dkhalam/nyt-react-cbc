@@ -22,8 +22,9 @@ app.use(express.static("./public"));
 
 // -------------------------------------------------
 //mongodb://admin:reactrocks@ds023593.mlab.com:23593/heroku_pg676kmk
+//mongodb://localhost:27017/NYTimes
 // MongoDB Configuration configuration
-mongoose.connect("mongodb://localhost:27017/NYTimes");
+mongoose.connect("mongodb://admin:reactrocks@ds023593.mlab.com:23593/heroku_pg676kmk");
 var db = mongoose.connection;
 
 db.on("error", function(err) {
